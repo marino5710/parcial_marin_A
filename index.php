@@ -14,7 +14,7 @@
                 <h1 class="text-center">Personajes de la serie de Ricky Mortin</h1>
                 <form method="POST" class="mb-4">
                     <div class="input-group">
-                        <input type="text" name="pokemon" id="pokemon" class="form-control" placeholder="Ingrese el nombre del Personaje">
+                        <input type="text" name="morty" id="morty" class="form-control" placeholder="Ingrese el nombre del Personaje">
                         <button type="submit" class="btn btn-primary">Consultar</button>
                     </div>
                 </form>
