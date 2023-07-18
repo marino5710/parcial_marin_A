@@ -12,3 +12,9 @@
         <div class="row justify-content-center">
             <div class="col-md-8">
                 <h1 class="text-center">API Fetch</h1>
+                <form method="POST" class="mb-4">
+                    <div class="input-group">
+                        <input type="text" name="pokemon" id="pokemon" class="form-control" placeholder="Ingrese el nombre del Pokémon">
+                        <button type="submit" class="btn btn-primary">Consultar</button>
+                    </div>
+                </form>
