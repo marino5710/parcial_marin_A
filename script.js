@@ -34,30 +34,31 @@ botonReset1.addEventListener('click', limpiarFormularioEpisodio);
 
 botonResetLocation.addEventListener('click', limpiarFormularioLocation);
 
+/////funcion para limpiar formulario
 
-// Funcion para limpiar los campos del formulario de Morty
 function limpiarFormularioMorty() {
-  formulario.reset(); // Reinicia el formulario
-  tabla.style.display = 'none'; // Oculta la tabla de resultados
-  document.getElementById('estado').innerText = ''; // Borra el contenido de "Personaje encontrado"
-}
-
-// Funcion para limpiar los campos del formulario de EPISODIOS
-function limpiarFormularioEpisodio() {
-  formulario1.reset(); 
-  tabla1.style.display = 'none'; 
-  document.getElementById('estadoEpisodio').innerText = '';
-}
-
-// Funcion para limpiar formulario de UBICAICON
-function limpiarFormularioUbicacion() {
-  formularioLocation.reset(); 
-  tablaLocation.style.display = 'none'; 
-  document.getElementById('estadoLocation').innerText = ''; 
-}
+    formulario.reset(); 
+    tabla.style.display = 'none'; 
+    document.getElementById('estado').innerText = ''; 
+  }
 
 
-/// CONSULTAR APY DE MORTY POR NOMBRE 
+  ///
+
+  function limpiarFormularioEpisodio() {
+    formulario1.reset(); 
+    tabla1.style.display = 'none'; 
+    document.getElementById('estadoEpisodio').innerText = ''; 
+  }
+
+
+  //
+  function limpiarFormularioLocation() {
+    formularioLocation.reset(); 
+    tablaLocation.style.display = 'none'; 
+    document.getElementById('estadoLocation').innerText = ''; 
+  }
+
 const consultarMorty = async (e) => {
     e.preventDefault();
     let nombreMorty = formulario.morty.value;
