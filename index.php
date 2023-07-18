@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>tarea 5</title>
+    <title>parcial</title>
     <link rel="icon" type="image/x-icon" href="data:image/x-icon;,">
 </head>
 <body>
