@@ -18,7 +18,7 @@
 }
 </style>
 <body>
-<header class="py-3 metallic-blue">
+<header class="py-3 bg-primary">
     <div class="container">
       <h1 class="text-center">COMANDO DE INFORMÁTICA Y TECNOLOGÍA</h1>
     </div>
@@ -86,35 +86,35 @@
                 <button type="reset" class="btn btn-danger">Limpiar Formulario</button>
             </div>
         </form>
-        <p id="estadoEpisodio" class="text-center bg-info"></p>
-        <table id="tablaEpisodio" class="table table-bordered table-hover" style="display: none;">
-            <thead>
-            <tr>
-                <th>DATO</th>
-                <th>VALOR</th>
-            </tr>
-            </thead>
-            <tbody>
-            <tr>
-                <td>ID</td>
-                <td id="episodioId"></td>
-            </tr>
-            <tr>
-                <td>Nombre del episodio</td>
-                <td id="episodioName"></td>
-            </tr>
-            <tr>
-                <td>Episodio al aire</td>
-                <td id="episodioAire"></td>
-            </tr>
-            <tr>
-                <td>CREADO</td>
-                <td id="episodioCreado"></td>
-            </tr>
-            </tbody>
-        </table>
+            <p id="estadoEpisodio" class="text-center bg-info"></p>
+                <table id="tablaEpisodio" class="table table-bordered table-hover" style="display: none;">
+                    <thead>
+                    <tr>
+                        <th>DATO</th>
+                        <th>VALOR</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>ID</td>
+                        <td id="episodioId"></td>
+                    </tr>
+                    <tr>
+                        <td>Nombre del episodio</td>
+                        <td id="episodioName"></td>
+                    </tr>
+                    <tr>
+                        <td>Episodio al aire</td>
+                        <td id="episodioAire"></td>
+                    </tr>
+                    <tr>
+                        <td>CREADO</td>
+                        <td id="episodioCreado"></td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
         </div>
-    </div>
     </div>
 
     <!-- aqui empieza mi tercer endpoint busqueda de location por id  -->
@@ -132,38 +132,38 @@
                 <button type="reset" class="btn btn-danger">Limpiar Formulario</button>
             </div>
         </form>
-        <p id="estadoLocation" class="text-center bg-info"></p>
-        <table id="tablaLocation" class="table table-bordered table-hover" style="display: none;">
-            <thead>
-            <tr>
-                <th>DATO</th>
-                <th>VALOR</th>
-            </tr>
-            </thead>
-            <tbody>
-            <tr>
-                <td>ID</td>
-                <td id="locationId"></td>
-            </tr>
-            <tr>
-                <td>Nombre</td>
-                <td id="locationName"></td>
-            </tr>
-            <tr>
-                <td>Tipo</td>
-                <td id="locationTipo"></td>
-            </tr>
-            <tr>
-                <td>Dimension</td>
-                <td id="locationDimension"></td>
-            </tr>
-            </tbody>
-        </table>
+            <p id="estadoLocation" class="text-center bg-info"></p>
+                <table id="tablaLocation" class="table table-bordered table-hover" style="display: none;">
+                    <thead>
+                    <tr>
+                        <th>DATO</th>
+                        <th>VALOR</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>ID</td>
+                        <td id="locationId"></td>
+                    </tr>
+                    <tr>
+                        <td>Nombre</td>
+                        <td id="locationName"></td>
+                    </tr>
+                    <tr>
+                        <td>Tipo</td>
+                        <td id="locationTipo"></td>
+                    </tr>
+                    <tr>
+                        <td>Dimension</td>
+                        <td id="locationDimension"></td>
+                    </tr>
+                    </tbody>
+                </table>
+                </div>
+            </div>
         </div>
-    </div>
-    </div>
 
-    <footer class="py-3 metallic-blue">
+    <footer class="py-3 bg-primary">
         <div class="container">
         <p class="text-center">COMANDO DE INFORMÁTICA Y TECNOLOGÍA &copy; 2023</p>
         </div>
