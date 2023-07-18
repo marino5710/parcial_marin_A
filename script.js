@@ -41,4 +41,8 @@ const consultarMorty = async (e) => {
         console.log(error);
       }
     };
+
+    formulario.addEventListener('submit', consultarMorty);
+    button.addEventListener('click', consultaAPI);
+      
     
