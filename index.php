@@ -79,8 +79,11 @@
         <h1 class="text-center display-6 fw-bold text-primary bg-warning p-3">Episodios de la serie de Ricky Mortin</h1>
         <form id="formEpisodio"method="POST" class="mb-4">
             <div class="input-group">
-            <input type="text" name="episodio" id="episodio" class="form-control" placeholder="Ingrese el ID del episodio">
-            <button type="submit" class="btn btn-primary ms-2">Consultar</button>
+                <input type="text" name="episodio" id="episodio" class="form-control" placeholder="Ingrese el ID del episodio">
+            </div>
+            <div class="input-group mt-1">
+                <button type="submit" class="btn btn-primary">Consultar</button>
+                <button type="reset" class="btn btn-danger">Limpiar Formulario</button>
             </div>
         </form>
         <p id="estadoEpisodio" class="text-center bg-info"></p>
@@ -122,9 +125,11 @@
         <h1 class="text-center display-6 fw-bold text-primary bg-warning p-3">Ubicaciones de la serie de Ricky Mortin</h1>
         <form id="formLocation"method="POST" class="mb-4">
             <div class="input-group">
-            <input type="text" name="location" id="location" class="form-control" placeholder="Ingrese el ID de la ubicación">
-            <button type="submit" class="btn btn-primary ms-2">Consultar</button>
-            <button type="reset" class="btn btn-primary ms-2">Limpiar Formulario</button>
+                <input type="text" name="location" id="location" class="form-control" placeholder="Ingrese el ID de la ubicación">
+            </div>
+            <div class="input-group mt-1">
+                <button type="submit" class="btn btn-primary">Consultar</button>
+                <button type="reset" class="btn btn-danger">Limpiar Formulario</button>
             </div>
         </form>
         <p id="estadoLocation" class="text-center bg-info"></p>
