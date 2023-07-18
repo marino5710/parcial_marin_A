@@ -1,3 +1,4 @@
+//constantes para el primer evento encontrar personaje por nombre 
 const formulario = document.querySelector('form');
 const tabla = document.querySelector('table');
 const button = document.querySelector('button[type="submit"]');
@@ -43,5 +44,9 @@ const consultarMorty = async (e) => {
     };
 
     formulario.addEventListener('submit', consultarMorty);
+
+
+
+    ///
 
     

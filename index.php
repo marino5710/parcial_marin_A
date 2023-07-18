@@ -16,7 +16,51 @@
 <div class="container mt-5 bg-light">
         <div class="row justify-content-center">
             <div class="col-md-8">
-                <h1 class="text-center display-4 fw-bold text-primary bg-warning p-3">Personajes de la serie de Ricky Mortin</h1>
+                <h1 class="text-center display-6 fw-bold text-primary bg-warning p-3">Personajes de la serie de Ricky Mortin</h1>
+                <form method="POST" class="mb-4">
+                    <div class="input-group">
+                        <input type="text" name="morty" id="morty" class="form-control" placeholder="Ingrese el nombre del Personaje">
+                        <button type="submit" class="btn btn-primary ms-2">Consultar</button>
+                    </div>
+                </form>
+                <p id="estado" class="text-center bg-info"></p>
+                <table id="table" class="table table-bordered table-hover">
+                    <thead>
+                        <tr>
+                            <th>DATO</th>
+                            <th>VALOR</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>NOMBRE</td>
+                            <td id="nombreMorty"></td>
+                        </tr>
+                        <tr>
+                            <td>PESO</td>
+                            <td id="pesoMorty"></td>
+                        </tr>
+                        <tr>
+                            <td>TIPO</td>
+                            <td id="tipoMorty"></td>
+                        </tr>
+                        <tr>
+                            <td>CREADO</td>
+                            <td id="creadoMorty"></td>
+                        </tr>
+                        <tr>
+                            <td>IMAGEN</td>
+                            <td><img src="" alt="" id="imagenMorty" class="img-fluid"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <div class="container mt-5 bg-light">
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <h1 class="text-center display-6 fw-bold text-primary bg-warning p-3">Personajes de la serie de Ricky Mortin</h1>
                 <form method="POST" class="mb-4">
                     <div class="input-group">
                         <input type="text" name="morty" id="morty" class="form-control" placeholder="Ingrese el nombre del Personaje">
