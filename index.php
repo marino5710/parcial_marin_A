@@ -107,14 +107,14 @@
     <div class="row justify-content-center">
         <div class="col-md-8">
         <h1 class="text-center display-6 fw-bold text-primary bg-warning p-3">Episodios de la serie de Ricky Mortin</h1>
-        <form id="formEpisodio"method="POST" class="mb-4">
+        <form id="formLocation"method="POST" class="mb-4">
             <div class="input-group">
             <input type="text" name="episodio" id="episodio" class="form-control" placeholder="Ingrese el ID del episodio">
             <button type="submit" class="btn btn-primary ms-2">Consultar</button>
             </div>
         </form>
-        <p id="estadoEpisodio" class="text-center bg-info"></p>
-        <table id="tablaEpisodio" class="table table-bordered table-hover" style="display: none;">
+        <p id="estadoLocation" class="text-center bg-info"></p>
+        <table id="tablaLocation" class="table table-bordered table-hover" style="display: none;">
             <thead>
             <tr>
                 <th>DATO</th>
@@ -124,19 +124,19 @@
             <tbody>
             <tr>
                 <td>ID</td>
-                <td id="episodioId"></td>
+                <td id="locationId"></td>
             </tr>
             <tr>
                 <td>Nombre</td>
-                <td id="episodioName"></td>
+                <td id="locationName"></td>
             </tr>
             <tr>
                 <td>Tipo</td>
-                <td id="episodioAire"></td>
+                <td id="locationAire"></td>
             </tr>
             <tr>
                 <td>Dimension</td>
-                <td id="episodioCreado"></td>
+                <td id="locationCreado"></td>
             </tr>
             </tbody>
         </table>
