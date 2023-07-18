@@ -163,9 +163,9 @@
             </div>
         </div>
 
-    <footer class="py-3 bg-primary">
+    <footer class="py-3 bg-primary mt-5">
         <div class="container">
-        <p class="text-center">COMANDO DE INFORMÁTICA Y TECNOLOGÍA &copy; 2023</p>
+        <p class="text-center fw-bold">COMANDO DE INFORMÁTICA Y TECNOLOGÍA 2023</p>
         </div>
     </footer>
 
