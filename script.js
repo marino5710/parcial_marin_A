@@ -59,6 +59,9 @@ function limpiarFormularioMorty() {
     document.getElementById('estadoLocation').innerText = ''; 
   }
 
+
+  ///consultar morty
+
 const consultarMorty = async (e) => {
     e.preventDefault();
     let nombreMorty = formulario.morty.value;
