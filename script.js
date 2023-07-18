@@ -2,6 +2,7 @@
 const formulario = document.querySelector('#formMorty');
 const tabla = document.querySelector('#tablaMorty');
 const button = document.querySelector('#formMorty button[type="submit"]');
+const botonReset = document.querySelector('#formMorty button[type="reset"]');
 
 ////constantes para el segundo endpoint buscar episodios por su id
 
@@ -16,7 +17,17 @@ const formularioLocation = document.querySelector('#formLocation');
 const tablaLocation = document.querySelector('#tablaLocation');
 const buttonLocation = document.querySelector('#formLocation button[type="submit"]');
 
+// evento para limpiar formulario
 
+botonReset.addEventListener('click', limpiarFormulario);
+
+/////funcion para limpiar formulario 
+
+function limpiarFormulario() {
+    formulario.reset(); 
+    tabla.style.display = 'none'; 
+    document.getElementById('estado').innerText = ''; 
+  }
 
 const consultarMorty = async (e) => {
     e.preventDefault();

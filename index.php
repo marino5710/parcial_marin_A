@@ -11,17 +11,30 @@
 /* #table {
     background-color: #E6F0FF;
 } */
+
+.metallic-blue {
+      background-color: rgba(0, 123, 255, 0.5); 
+      color: #fff; 
+}
 </style>
 <body>
+<header class="py-3 metallic-blue">
+    <div class="container">
+      <h1 class="text-center">COMANDO DE INFORMÁTICA Y TECNOLOGÍA</h1>
+    </div>
+  </header>
 <div class="container mt-5 bg-light">
         <div class="row justify-content-center">
             <div class="col-md-8">
                 <h1 class="text-center display-6 fw-bold text-primary bg-warning p-3">Personajes de la serie de Ricky Mortin</h1>
                 <form id="formMorty" method="POST" class="mb-4">
-                    <div class="input-group">
-                        <input type="text" name="morty" id="morty" class="form-control" placeholder="Ingrese el nombre del Personaje">
-                        <button type="submit" class="btn btn-primary ms-2">Consultar</button>
-                    </div>
+                <div class="input-group">
+                    <input type="text" name="morty" id="morty" class="form-control" placeholder="Ingrese el nombre del Personaje">
+                </div>
+                <div class="input-group mt-1">
+                    <button type="submit" class="btn btn-primary">Consultar</button>
+                    <button type="reset" class="btn btn-danger">Limpiar Formulario</button>
+                </div>
                 </form>
                 <p id="estado" class="text-center bg-info"></p>
                 <table id="tablaMorty" class="table table-bordered table-hover">
@@ -111,6 +124,7 @@
             <div class="input-group">
             <input type="text" name="location" id="location" class="form-control" placeholder="Ingrese el ID de la ubicación">
             <button type="submit" class="btn btn-primary ms-2">Consultar</button>
+            <button type="reset" class="btn btn-primary ms-2">Limpiar Formulario</button>
             </div>
         </form>
         <p id="estadoLocation" class="text-center bg-info"></p>
@@ -143,6 +157,12 @@
         </div>
     </div>
     </div>
+
+    <footer class="py-3 metallic-blue">
+        <div class="container">
+        <p class="text-center">COMANDO DE INFORMÁTICA Y TECNOLOGÍA &copy; 2023</p>
+        </div>
+    </footer>
 
     <script src="script.js"></script>
 </body>
