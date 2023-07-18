@@ -127,15 +127,15 @@
                 <td id="episodioId"></td>
             </tr>
             <tr>
-                <td>Nombre del episodio</td>
+                <td>Nombre</td>
                 <td id="episodioName"></td>
             </tr>
             <tr>
-                <td>Episodio al aire</td>
+                <td>Tipo</td>
                 <td id="episodioAire"></td>
             </tr>
             <tr>
-                <td>CREADO</td>
+                <td>Dimension</td>
                 <td id="episodioCreado"></td>
             </tr>
             </tbody>
