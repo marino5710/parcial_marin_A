@@ -133,9 +133,8 @@ const consultarLocation = async (e) => {
         console.log(data);
         console.log(data.id);
         console.log(data.name);
-        console.log(data.air_date);
-        console.log(data.episode);
-        console.log(data.created);
+        console.log(data.type);
+        console.log(data.dimension);
   
         document.getElementById('locationId').innerText = data.id;
         document.getElementById('locationName').innerText = data.name;
