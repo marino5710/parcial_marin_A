@@ -9,6 +9,8 @@ const botonReset = document.querySelector('#formMorty button[type="reset"]');
 const formulario1 = document.querySelector('#formEpisodio');
 const tabla1 = document.querySelector('#tablaEpisodio');
 const button1 = document.querySelector('#formEpisodio button[type="submit"]');
+const botonReset1 = document.querySelector('#formEpisodio button[type="reset"]');
+
 
 
 ///constantes para el tercer endpoint 
@@ -16,19 +18,46 @@ const button1 = document.querySelector('#formEpisodio button[type="submit"]');
 const formularioLocation = document.querySelector('#formLocation');
 const tablaLocation = document.querySelector('#tablaLocation');
 const buttonLocation = document.querySelector('#formLocation button[type="submit"]');
+const botonResetLocation = document.querySelector('#formLocation button[type="reset"]');
 
-// evento para limpiar formulario
 
-botonReset.addEventListener('click', limpiarFormulario);
+// evento para limpiar formulario UNO DE MORTY 
 
-/////funcion para limpiar formulario 
+botonReset.addEventListener('click', limpiarFormularioMorty);
 
-function limpiarFormulario() {
-    formulario.reset(); 
-    tabla.style.display = 'none'; 
-    document.getElementById('estado').innerText = ''; 
-  }
+//EVENTO PARA LIMPIAR FORMULARIO 2 DE EPISODIOOS
 
+botonReset1.addEventListener('click', limpiarFormularioEpisodio);
+
+
+///EVENTO PARA LIMPIAR FORMULARIO 3 DE UBICACION 
+
+botonResetLocation.addEventListener('click', limpiarFormularioLocation);
+
+
+// Funcion para limpiar los campos del formulario de Morty
+function limpiarFormularioMorty() {
+  formulario.reset(); // Reinicia el formulario
+  tabla.style.display = 'none'; // Oculta la tabla de resultados
+  document.getElementById('estado').innerText = ''; // Borra el contenido de "Personaje encontrado"
+}
+
+// Funcion para limpiar los campos del formulario de EPISODIOS
+function limpiarFormularioEpisodio() {
+  formulario1.reset(); 
+  tabla1.style.display = 'none'; 
+  document.getElementById('estadoEpisodio').innerText = '';
+}
+
+// Funcion para limpiar formulario de UBICAICON
+function limpiarFormularioUbicacion() {
+  formularioLocation.reset(); 
+  tablaLocation.style.display = 'none'; 
+  document.getElementById('estadoLocation').innerText = ''; 
+}
+
+
+/// CONSULTAR APY DE MORTY POR NOMBRE 
 const consultarMorty = async (e) => {
     e.preventDefault();
     let nombreMorty = formulario.morty.value;
