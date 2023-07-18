@@ -18,3 +18,34 @@
                         <button type="submit" class="btn btn-primary">Consultar</button>
                     </div>
                 </form>
+                <p id="estado" class="text-center"></p>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>DATO</th>
+                            <th>VALOR</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>NOMBRE</td>
+                            <td id="nombreMorty"></td>
+                        </tr>
+                        <tr>
+                            <td>PESO</td>
+                            <td id="pesoMorty"></td>
+                        </tr>
+                        <tr>
+                            <td>TIPO</td>
+                            <td id="tipoMorty"></td>
+                        </tr>
+                        <tr>
+                            <td>CREADO</td>
+                            <td id="creadoMorty"></td>
+                        </tr>
+                        <tr>
+                            <td>IMAGEN</td>
+                            <td><img src="" alt="" id="imagenMorty" class="img-fluid"></td>
+                        </tr>
+                    </tbody>
+                </table>
