@@ -3,11 +3,20 @@ const formulario = document.querySelector('#formMorty');
 const tabla = document.querySelector('#tablaMorty');
 const button = document.querySelector('#formMorty button[type="submit"]');
 
-////constantes para el segundo endpoint buscar episodios por su nombre
+////constantes para el segundo endpoint buscar episodios por su id
 
 const formulario1 = document.querySelector('#formEpisodio');
 const tabla1 = document.querySelector('#tablaEpisodio');
 const button1 = document.querySelector('#formEpisodio button[type="submit"]');
+
+
+///constantes para el tercer endpoint 
+
+const formularioLocation = document.querySelector('#formLocation');
+const tablaLocation = document.querySelector('#tablaLocation');
+const buttonLocation = document.querySelector('#formLocation button[type="submit"]');
+
+
 
 const consultarMorty = async (e) => {
     e.preventDefault();
@@ -54,7 +63,7 @@ const consultarMorty = async (e) => {
 
     ///segundo endpoint
 
-//buscar personajes por genero y ordenarlos de mayor a menor seg
+//buscar episodios a traves del id 
 
 
 
@@ -98,3 +107,48 @@ const consultarEpisodio = async (e) => {
   };
   
   formulario1.addEventListener('submit', consultarEpisodio);
+
+//////////////////////////////////////////
+///////buscar ubicacion por medio de nombre
+
+
+const consultarLocation = async (e) => {
+    e.preventDefault();
+    let idLocation = formularioLocation.location.value;
+    if (idLocation == '') {
+      alert("Debe ingresar el ID del episodio");
+      return;
+    }
+    const url = `https://rickandmortyapi.com/api/location/${idLocation}`;
+  
+    const config = {
+      method: 'GET'
+    };
+  
+    document.getElementById('estadoLocation').innerText = 'Buscando ubicación...';
+    try {
+      const respuesta = await fetch(url, config);
+      if (respuesta.status === 200) {
+        const data = await respuesta.json();
+        console.log(data);
+        console.log(data.id);
+        console.log(data.name);
+        console.log(data.air_date);
+        console.log(data.episode);
+        console.log(data.created);
+  
+        document.getElementById('locationId').innerText = data.id;
+        document.getElementById('locationName').innerText = data.name;
+        document.getElementById('locationTipo').innerText = data.type;
+        document.getElementById('locationDimension').innerText = data.dimension;
+        document.getElementById('estadoLocation').innerText = 'Ubicación encontrada';
+        tablaLocation.style.display = '';
+      } else {
+        document.getElementById('estadoLocation').innerText = 'Ubicación no encontrada';
+      }
+    } catch (error) {
+      console.log(error);
+    }
+  };
+  
+  formularioLocation.addEventListener('submit', consultarLocation);

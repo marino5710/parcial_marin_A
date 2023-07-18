@@ -106,10 +106,10 @@
     <div class="container mt-5 bg-light">
     <div class="row justify-content-center">
         <div class="col-md-8">
-        <h1 class="text-center display-6 fw-bold text-primary bg-warning p-3">Episodios de la serie de Ricky Mortin</h1>
+        <h1 class="text-center display-6 fw-bold text-primary bg-warning p-3">Ubicaciones de la serie de Ricky Mortin</h1>
         <form id="formLocation"method="POST" class="mb-4">
             <div class="input-group">
-            <input type="text" name="episodio" id="episodio" class="form-control" placeholder="Ingrese el ID del episodio">
+            <input type="text" name="location" id="location" class="form-control" placeholder="Ingrese el ID de la ubicación">
             <button type="submit" class="btn btn-primary ms-2">Consultar</button>
             </div>
         </form>
@@ -132,11 +132,11 @@
             </tr>
             <tr>
                 <td>Tipo</td>
-                <td id="locationAire"></td>
+                <td id="locationTipo"></td>
             </tr>
             <tr>
                 <td>Dimension</td>
-                <td id="locationCreado"></td>
+                <td id="locationDimension"></td>
             </tr>
             </tbody>
         </table>
