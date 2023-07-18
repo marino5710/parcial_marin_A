@@ -1,6 +1,6 @@
 const formulario = document.querySelector('form');
 const tabla = document.querySelector('table');
-const button = document.getElementById('buttonConsulta');
+const button = document.querySelector('button[type="submit"]');
 
 
 const consultarMorty = async (e) => {
@@ -43,6 +43,5 @@ const consultarMorty = async (e) => {
     };
 
     formulario.addEventListener('submit', consultarMorty);
-    button.addEventListener('click', consultaAPI);
-      
+
     
